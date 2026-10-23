@@ -1,0 +1,6 @@
+{
+  "name": "Mega Weekly Game",
+  "description": "Offline-First Native-Styled Android Application for The Government Lottery Officer with 3-digit lucky draw, multi-country currency wallets, immutable bank accounts, admin control, automatic winning payouts, and withdrawal management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

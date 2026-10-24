@@ -65,7 +65,7 @@ export const UserResultsScreen: React.FC<UserResultsScreenProps> = ({
         </div>
 
         <p className="text-xs font-bold text-amber-200 mt-2">
-          Winning Multiplier: 500X • 1 {user.currency} = 500 {user.currency}
+          Winning Multiplier: 400X • 1 {user.currency} = 400 {user.currency}
         </p>
       </div>
 
@@ -158,7 +158,7 @@ export const UserResultsScreen: React.FC<UserResultsScreenProps> = ({
                       Ticket #{entry.gameNumber}
                     </span>
                     <p className="text-xs font-semibold text-slate-500">
-                      Amount: {formatCurrency(entry.gameAmount, entry.currency)} • Potential 500X: {formatCurrency(entry.potentialWinning, entry.currency)}
+                      Amount: {formatCurrency(entry.gameAmount, entry.currency)} • Potential 400X: {formatCurrency(entry.potentialWinning, entry.currency)}
                     </p>
                   </div>
                 </div>

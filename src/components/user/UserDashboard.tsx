@@ -38,9 +38,9 @@ export const UserDashboard: React.FC<UserDashboardProps> = ({
     {
       id: 'game',
       title: 'ENTER DRAW',
-      subtitle: 'Pick 3-digit number & win 500X',
+      subtitle: 'Pick 3-digit number & win 400X',
       icon: Gamepad2,
-      badge: '500X Payout',
+      badge: '400X Payout',
       badgeColor: 'bg-amber-400 text-sky-950 font-black',
       cardBg: 'bg-gradient-to-br from-sky-600 via-sky-700 to-[#032242] text-white shadow-sky-900/20',
       iconBg: 'bg-white/20 text-white',
@@ -187,7 +187,7 @@ export const UserDashboard: React.FC<UserDashboardProps> = ({
             </span>
           </div>
           <div className="bg-sky-950/60 p-2.5 rounded-xl border border-sky-500/30">
-            <span className="text-sky-200/80 block font-medium">Total Won (500X)</span>
+            <span className="text-sky-200/80 block font-medium">Total Won (400X)</span>
             <span className="font-black text-amber-300 text-base flex items-center gap-1 mt-0.5">
               <span>{formatCurrency(totalWon, user.currency)}</span>
               <span>🏆</span>
@@ -297,7 +297,7 @@ export const UserDashboard: React.FC<UserDashboardProps> = ({
                       Ticket #{entry.gameNumber}
                     </p>
                     <p className="text-[11px] font-semibold text-slate-500">
-                      Amount: {formatCurrency(entry.gameAmount, entry.currency)} • 500X: {formatCurrency(entry.potentialWinning, entry.currency)}
+                      Amount: {formatCurrency(entry.gameAmount, entry.currency)} • 400X: {formatCurrency(entry.potentialWinning, entry.currency)}
                     </p>
                   </div>
                 </div>

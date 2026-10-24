@@ -120,7 +120,7 @@ export interface WithdrawalRequest {
 }
 
 export interface GameSettings {
-  winningMultiplier: number; // 500
+  winningMultiplier: number; // 400
   adminMobile: string;
   adminPassword: string;
   adminPin?: string;

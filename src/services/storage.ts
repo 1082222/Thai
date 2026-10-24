@@ -27,7 +27,7 @@ export const ADMIN_CREDENTIALS = {
 };
 
 const DEFAULT_SETTINGS: GameSettings = {
-  winningMultiplier: 500,
+  winningMultiplier: 400,
   adminMobile: ADMIN_CREDENTIALS.mobile,
   adminPassword: ADMIN_CREDENTIALS.password,
   lastWinningNumber: '777',
@@ -269,8 +269,8 @@ const SEED_ENTRIES: GameEntry[] = [
     currency: 'SAR',
     gameNumber: '777',
     gameAmount: 10,
-    potentialWinning: 5000,
-    actualWinning: 5000,
+    potentialWinning: 4000,
+    actualWinning: 4000,
     status: 'WINNER',
     declaredWinningNumber: '777',
     createdAt: new Date(Date.now() - 86400000 * 2).toISOString(),
@@ -287,7 +287,7 @@ const SEED_ENTRIES: GameEntry[] = [
     currency: 'SAR',
     gameNumber: '123',
     gameAmount: 20,
-    potentialWinning: 10000,
+    potentialWinning: 8000,
     actualWinning: 0,
     status: 'NOT MATCHED',
     declaredWinningNumber: '777',
@@ -305,7 +305,7 @@ const SEED_ENTRIES: GameEntry[] = [
     currency: 'SAR',
     gameNumber: '345',
     gameAmount: 15,
-    potentialWinning: 7500,
+    potentialWinning: 6000,
     actualWinning: 0,
     status: 'PENDING',
     createdAt: new Date(Date.now() - 3600000 * 3).toISOString(),
@@ -321,7 +321,7 @@ const SEED_ENTRIES: GameEntry[] = [
     currency: 'KWD',
     gameNumber: '345',
     gameAmount: 10,
-    potentialWinning: 5000,
+    potentialWinning: 4000,
     actualWinning: 0,
     status: 'PENDING',
     createdAt: new Date(Date.now() - 3600000 * 2).toISOString(),
@@ -362,9 +362,9 @@ const SEED_TRANSACTIONS: WalletTransaction[] = [
     countryCode: 'SAR',
     currency: 'SAR',
     type: 'WINNING CREDIT',
-    amount: 5000,
-    balanceAfter: 5990,
-    description: 'The Government Lottery Winning Amount (10 × 500 SAR)',
+    amount: 4000,
+    balanceAfter: 4990,
+    description: 'The Government Lottery Winning Amount (10 × 400 SAR)',
     date: new Date(Date.now() - 86400000 * 2).toISOString(),
     referenceId: 'entry_1',
   },
@@ -602,7 +602,12 @@ class StorageService {
   getSettings(): GameSettings {
     this.initStorage();
     const data = localStorage.getItem(STORAGE_KEYS.SETTINGS);
-    return data ? JSON.parse(data) : DEFAULT_SETTINGS;
+    const parsed: GameSettings = data ? JSON.parse(data) : DEFAULT_SETTINGS;
+    if (!parsed.winningMultiplier || parsed.winningMultiplier === 500) {
+      parsed.winningMultiplier = 400;
+      this.saveSettings(parsed);
+    }
+    return parsed;
   }
 
   saveSettings(settings: GameSettings): void {
@@ -659,7 +664,7 @@ class StorageService {
     }
 
     const settings = this.getSettings();
-    const multiplier = settings.winningMultiplier || 500;
+    const multiplier = settings.winningMultiplier || 400;
     const potentialWinning = amount * multiplier;
 
     // Deduct wallet balance
@@ -718,7 +723,7 @@ class StorageService {
     const formattedWinner = winningNumber.toString().padStart(3, '0').slice(-3);
     const entries = this.getEntries();
     const settings = this.getSettings();
-    const multiplier = settings.winningMultiplier || 500;
+    const multiplier = settings.winningMultiplier || 400;
     const nowIso = new Date().toISOString();
 
     let totalProcessed = 0;

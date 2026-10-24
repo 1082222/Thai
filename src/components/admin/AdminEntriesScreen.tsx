@@ -194,7 +194,7 @@ export const AdminEntriesScreen: React.FC<AdminEntriesScreenProps> = ({
                     </span>
                   </div>
                   <div>
-                    <span className="text-slate-400 block font-bold text-[10px] uppercase">500X POTENTIAL</span>
+                    <span className="text-slate-400 block font-bold text-[10px] uppercase">400X POTENTIAL</span>
                     <span className="font-black text-sky-800 text-sm">
                       {formatCurrency(entry.potentialWinning, entry.currency)}
                     </span>

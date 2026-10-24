@@ -94,7 +94,7 @@ export const WinnerCelebration: React.FC<WinnerCelebrationProps> = ({
         {/* Big Winning Amount */}
         <div className="bg-gradient-to-r from-sky-900/80 via-sky-800/80 to-sky-900/80 rounded-2xl p-4 border border-sky-400/40 my-4 shadow-inner">
           <p className="text-xs text-sky-200 uppercase font-bold tracking-wider mb-0.5">
-            TOTAL WINNING AMOUNT (500X)
+            TOTAL WINNING AMOUNT (400X)
           </p>
           <p className="text-3xl font-black text-amber-300 drop-shadow-md">
             {formatCurrency(amount, currency)}

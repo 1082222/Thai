@@ -210,7 +210,7 @@ export const UserHistoryScreen: React.FC<UserHistoryScreenProps> = ({
                   </span>
                 </div>
                 <div>
-                  <span className="text-slate-400 block font-bold text-[10px] uppercase">POTENTIAL (500X)</span>
+                  <span className="text-slate-400 block font-bold text-[10px] uppercase">POTENTIAL (400X)</span>
                   <span className="font-black text-sky-800 text-sm">
                     {formatCurrency(entry.potentialWinning, entry.currency)}
                   </span>

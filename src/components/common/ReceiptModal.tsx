@@ -36,7 +36,7 @@ export const ReceiptModal: React.FC<ReceiptModalProps> = ({ entry, onClose }) =>
         return (
           <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-500 text-sky-950 font-black text-sm rounded-full shadow-sm animate-pulse">
             <Trophy className="w-4 h-4 fill-sky-950" />
-            WINNER 500X!
+            WINNER 400X!
           </span>
         );
       case 'LOSER':
@@ -76,7 +76,7 @@ IFSC Code: ${account?.ifscCode || 'N/A'}
 DRAW DETAILS:
 Selected 3-Digit Number: ${entry.gameNumber}
 Game Amount: ${formatCurrency(entry.gameAmount, entry.currency)}
-Potential Winning (500x): ${formatCurrency(entry.potentialWinning, entry.currency)}
+Potential Winning (400x): ${formatCurrency(entry.potentialWinning, entry.currency)}
 Current Status: ${entry.status}
 ${entry.status === 'WINNER' ? `Winning Credited: ${formatCurrency(entry.actualWinning, entry.currency)} 🏆` : ''}
 
@@ -236,7 +236,7 @@ ${entry.status === 'WINNER' ? `Winning Credited: ${formatCurrency(entry.actualWi
                 <span>DRAW & WINNING BREAKDOWN</span>
               </div>
               <span className="text-xs bg-sky-800/80 px-2 py-0.5 rounded text-sky-200 font-mono">
-                500X PAYOUT
+                400X PAYOUT
               </span>
             </div>
 

@@ -123,7 +123,7 @@ export default function App() {
       }
     } else {
       switch (currentScreen) {
-        case 'game': return 'Government Lottery Draw (500X)';
+        case 'game': return 'Government Lottery Draw (400X)';
         case 'wallet': return 'My Wallet';
         case 'withdraw': return 'Request Withdrawal';
         case 'results': return 'Official Draws & Results';
@@ -426,7 +426,7 @@ export default function App() {
             // User Navigation Bar Items
             [
               { id: 'dashboard', label: 'Home', icon: Home },
-              { id: 'game', label: 'Play 500X', icon: Gamepad2, highlight: true },
+              { id: 'game', label: 'Play 400X', icon: Gamepad2, highlight: true },
               { id: 'wallet', label: 'Wallet', icon: Wallet },
               { id: 'results', label: 'Results', icon: Trophy },
               { id: 'history', label: 'Tickets', icon: History },

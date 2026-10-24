@@ -60,7 +60,7 @@ export const AppLogo: React.FC<AppLogoProps> = ({
             </span>
             <span className="text-sky-300/50 text-[10px]">•</span>
             <span className="text-[10px] font-bold text-amber-300">
-              500X Multiplier
+              400X Multiplier
             </span>
           </div>
         )}

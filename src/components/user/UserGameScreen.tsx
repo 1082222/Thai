@@ -98,7 +98,7 @@ export const UserGameScreen: React.FC<UserGameScreenProps> = ({
       {/* Official Government Lottery Officer Heading Banner */}
       <Mega3UpHeader
         variant="banner"
-        subText="500X OFFICIAL LUCKY DRAW"
+        subText="400X OFFICIAL LUCKY DRAW"
       />
 
       {/* Top Banner */}
@@ -114,7 +114,7 @@ export const UserGameScreen: React.FC<UserGameScreenProps> = ({
             <p className="text-xs text-sky-200 font-semibold mt-1 flex items-center gap-1.5">
               <span>Select any 3-digit number from 000 to 999</span>
               <span>•</span>
-              <span className="text-amber-300 font-black">500X WINNING MULTIPLIER</span>
+              <span className="text-amber-300 font-black">400X WINNING MULTIPLIER</span>
             </p>
           </div>
 
@@ -321,22 +321,22 @@ export const UserGameScreen: React.FC<UserGameScreenProps> = ({
           </div>
         </div>
 
-        {/* Section 3: Potential Winning Display (500X) */}
+        {/* Section 3: Potential Winning Display (400X) */}
         <div className="bg-gradient-to-br from-[#032242] via-[#094d82] to-slate-950 text-white rounded-2xl p-5 shadow-lg border border-sky-400/50 space-y-2">
           <div className="flex items-center justify-between border-b border-sky-700/60 pb-2">
             <div className="flex items-center gap-1.5 text-xs font-black text-amber-300 uppercase tracking-wide">
               <Sparkles className="w-4 h-4" />
-              <span>POTENTIAL WINNING (500X MULTIPLIER)</span>
+              <span>POTENTIAL WINNING (400X MULTIPLIER)</span>
             </div>
             <span className="text-[11px] bg-sky-800 px-2 py-0.5 rounded text-sky-200 font-mono">
-              1 {user.currency} = 500 {user.currency}
+              1 {user.currency} = 400 {user.currency}
             </span>
           </div>
 
           <div className="flex items-center justify-between pt-1">
             <div>
               <p className="text-xs text-sky-200 font-semibold">
-                Calculation: {numericAmount} × 500 =
+                Calculation: {numericAmount} × 400 =
               </p>
               <p className="text-3xl sm:text-4xl font-black text-amber-300 tracking-tight drop-shadow-md">
                 🏆 {formatCurrency(potentialWinning, user.currency)}

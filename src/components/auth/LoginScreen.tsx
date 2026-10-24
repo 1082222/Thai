@@ -174,7 +174,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({
         <div className="text-center">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-sky-900/60 rounded-full border border-sky-400/40 text-xs font-bold text-sky-200 shadow-md">
             <ShieldCheck className="w-4 h-4 text-amber-300" />
-            <span>The Government Lottery Officer • 500X Guaranteed Direct Payout</span>
+            <span>The Government Lottery Officer • 400X Guaranteed Direct Payout</span>
           </div>
         </div>
       </div>

@@ -144,7 +144,7 @@ export const UserWalletScreen: React.FC<UserWalletScreenProps> = ({
           </div>
 
           <div className="bg-sky-950/60 p-3 rounded-2xl border border-sky-500/30">
-            <span className="text-amber-300/90 block font-bold text-[10px] uppercase">WINNING AMOUNT WON (500X)</span>
+            <span className="text-amber-300/90 block font-bold text-[10px] uppercase">WINNING AMOUNT WON (400X)</span>
             <span className="font-black text-amber-300 text-base block mt-0.5">
               {formatCurrency(totalWonAmount, user.currency)}
             </span>
@@ -166,7 +166,7 @@ export const UserWalletScreen: React.FC<UserWalletScreenProps> = ({
             className="py-4 px-4 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-sky-950 font-black rounded-2xl shadow-xl flex items-center justify-center gap-2 text-base transition-transform active:scale-98 cursor-pointer"
           >
             <Wallet className="w-5 h-5 stroke-[2.5]" />
-            <span>PLAY DRAW (500X)</span>
+            <span>PLAY DRAW (400X)</span>
           </button>
         </div>
       </div>

@@ -95,7 +95,7 @@ export const AdminDeclareResultScreen: React.FC<AdminDeclareResultScreenProps> =
             </div>
           </div>
           <span className="text-xs font-black bg-amber-400 text-slate-950 px-3 py-1.5 rounded-full shadow-md">
-            500X Payout
+            400X Payout
           </span>
         </div>
 
@@ -131,7 +131,7 @@ export const AdminDeclareResultScreen: React.FC<AdminDeclareResultScreenProps> =
               <span className="text-xl font-black text-white">{lastBatchSummary.totalProcessed}</span>
             </div>
             <div className="bg-sky-950/60 p-3 rounded-2xl border border-sky-600/30">
-              <span className="text-amber-300 block font-bold text-[10px]">WINNERS (500X)</span>
+              <span className="text-amber-300 block font-bold text-[10px]">WINNERS (400X)</span>
               <span className="text-xl font-black text-amber-300">{lastBatchSummary.winnersCount} 🏆</span>
             </div>
             <div className="bg-sky-950/60 p-3 rounded-2xl border border-sky-600/30">
@@ -238,7 +238,7 @@ export const AdminDeclareResultScreen: React.FC<AdminDeclareResultScreenProps> =
           <p className="font-black text-slate-900">⚡ What happens when you declare:</p>
           <ul className="list-disc pl-4 space-y-1">
             <li>All {pendingEntries.length} pending entries are checked against <strong>#{selectedNumberString}</strong>.</li>
-            <li>Matching tickets are marked <strong>WINNER 🏆</strong> and automatically credited <strong>Game Amount × 500</strong> in their native currency.</li>
+            <li>Matching tickets are marked <strong>WINNER 🏆</strong> and automatically credited <strong>Game Amount × 400</strong> in their native currency.</li>
             <li>Non-matching tickets are marked <strong>NOT MATCHED ❌</strong>.</li>
             <li>Single-credit protection ensures winners are credited exactly once.</li>
           </ul>
